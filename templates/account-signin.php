@@ -5,9 +5,9 @@
 		<div class="field account-sign-in">
 			<?php
 				$user = wp_get_current_user();
-				printf( __( 'You are currently signed in as <strong>%s</strong>.', 'wp-job-manager' ), $user->user_login );
+				
 			?>
-
+			You are currently signed in as <strong><a href="http://cock4jobs.com/members/<?php echo $user->user_login; ?>"><?php echo $user->user_login; ?></a></strong>.
 			<a class="button" href="<?php echo apply_filters( 'submit_job_form_logout_url', wp_logout_url( get_permalink() ) ); ?>"><?php _e( 'Sign out', 'wp-job-manager' ); ?></a>
 		</div>
 	</fieldset>

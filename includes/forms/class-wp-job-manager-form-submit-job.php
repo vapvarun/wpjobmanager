@@ -150,10 +150,10 @@ class WP_Job_Manager_Form_Submit_Job extends WP_Job_Manager_Form {
 			),
 			'company' => array(
 				'company_name' => array(
-					'label'       => __( 'Company name', 'wp-job-manager' ),
+					'label'       => __( 'Your name', 'wp-job-manager' ),
 					'type'        => 'text',
 					'required'    => true,
-					'placeholder' => __( 'Enter the name of the company', 'wp-job-manager' ),
+					'placeholder' => __( 'Enter the your name', 'wp-job-manager' ),
 					'priority'    => 1
 				),
 				'company_website' => array(
@@ -164,22 +164,16 @@ class WP_Job_Manager_Form_Submit_Job extends WP_Job_Manager_Form {
 					'priority'    => 2
 				),
 				'company_tagline' => array(
-					'label'       => __( 'Tagline', 'wp-job-manager' ),
+					'label'       => __( 'Favorite Quote', 'wp-job-manager' ),
 					'type'        => 'text',
 					'required'    => false,
-					'placeholder' => __( 'Briefly describe your company', 'wp-job-manager' ),
+					'placeholder' => __( 'Your favorite quote', 'wp-job-manager' ),
 					'maxlength'   => 64,
 					'priority'    => 3
 				),
-				'company_twitter' => array(
-					'label'       => __( 'Twitter username', 'wp-job-manager' ),
-					'type'        => 'text',
-					'required'    => false,
-					'placeholder' => __( '@yourcompany', 'wp-job-manager' ),
-					'priority'    => 4
-				),
+				
 				'company_logo' => array(
-					'label'       => __( 'Logo', 'wp-job-manager' ),
+					'label'       => __( 'A picture related to you on the Job', 'wp-job-manager' ),
 					'type'        => 'file',
 					'required'    => false,
 					'placeholder' => '',
